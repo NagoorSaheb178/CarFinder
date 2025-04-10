@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  select, input {
+    @apply px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}
